@@ -1,0 +1,59 @@
+1. What is Emmet?
+
+Emmet is a VSCode extension that helps us to write html code easily& faster and reduces the time we had to spend in writing HTML Code.
+
+2. Difference between a Library and Framework?
+Library:
+It has minimal number of rules and not specific about structure.
+User can freely call the library whenever needed which in deed calls the code to execute the program.
+
+Framework:
+It has stricter rules on do what and how and specific about folder structures.
+Framework actually calls the code and the code indirectly calls the library and users cannot explicitly call the library as needed.
+
+3. What is CDN? Why do we use it?
+CDN is used to improve the page load time.\
+
+Lets say suppose the user is in Chennai & server is in Delhi, The user request had to travel 1200Kms and come back with response travelling another 1200MS, for which it may take 600ms.
+
+if the CDN edge server is Chennai itself with local storage & cache, the chennai user request will be sent to the chennai edge server alone, if the requested page or data is not available in 
+Chennai edge server, the request is then passed to the main server in Delhi and response from delhi is cached in chennai edge server and sent back to the chennai user. 
+Second user request from chennai will only be sent from CDN edge server in chennai and the response will be sent from the cdn edge server that is already cached, instantly 
+without having to travel 2400KMss to and fro to delhi.
+
+4. Why is React known as React?
+Jordan Walker says,  the programming API reacts to any state or property changes, and works with data of any form and so connvinced in the name React.
+React is named React because of its ability to react to changes in data. When the data in a React component changes, React will automatically re-render 
+the component so that it reflects the new data. This makes it easy to create performant user interfaces that always look up-to-date.
+
+5. What is crossorigin in script tag?
+Crossorigin is an attribute that is set to enable CORS when HTTP requests are sent to another domain.
+CORS - Cross-Origin Resource Sharing, and is a mechanism that allows resources on a web page to be requested from another domain outside their own domain.
+It defines a way of how a browser and server can interact to determine whether it is safe to allow the cross-origin request. 
+CORS allows servers to specify who can access the assets on the server, among many other things.
+
+6. What is diference between React and ReactDOM
+React & ReactDOM are libraries.
+React- This library is the core and has all source code with respect to components, state, props and react.
+
+ReactDOM - After the arrival of ReactNative for mobile, all react Web relates sources are moved to ReactDOM to differentiate and it is mainly used to mount our App into index.html
+using reactDom.render()
+
+7. What is difference between react.development.js and react.production.js files via CDN?
+Development Version:
+By default, React includes many helpful warnings. These warnings are very useful in development. However, they make React larger and slower, thereby impacting performance.
+
+Production Version:
+Production Build has ugly, minified(compressed) version of your javascript code, so this makes rendering of file on end user's browser very quick and performance enhancing.
+Also that the development version of CDN could be available in another continent thereby introducing further slowness.
+
+8. What is async and defer?
+Ans:
+Async: It is an attribute that when set in the script tag will start loading the script parallely while html is still parsing as soon as the script tag is encountered.
+But as soon as the scripts are available, html parsing is paused and the script executes, post which html parsing will resume.
+
+Defer:
+It is an attribute that when set in the script tag will start loading the script parallely while html is still parsing as soon as the script tag is encountered.
+But the the scripts are executed only after the HTML parsing is complete.
+
+NoAttribute: When no attribute is set, html parsing pauses as soon as script tag is encountered and executed. Post which html parsing will resume.

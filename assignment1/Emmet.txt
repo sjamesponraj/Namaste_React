@@ -1,0 +1,112 @@
+What is Emmet?
+
+Emmet is a VSCode extension that helps us to write html code easily& faster and reduces the time we had to spend in writing HTML Code.
+
+Sample Emmet uses,
+1. To add HTML5 Boiler Plate,
+Ans: !
+
+2, Write HTML ements without open or close tags <>, </>
+Ans: div & enter or p & enter or a: enter
+
+3. To add class or id while creating an element
+Ans: 
+a) Create h1 with className as content
+h1.content
+
+b) Create h1 with id as content
+h1#content
+
+4. To create div with classname or id
+Ans: 
+
+a) class
+
+.title - creates <div className="title"></div>
+
+b) ID
+#title - creates <div id="title"></div>
+
+5. Create Nested elements
+Ans: use >
+div>p 
+
+Result:
+<div>
+	<p>
+	</p>
+</div>
+
+6. Create Nested children with classname or id,
+Ans: .container>p.item
+Result:
+
+<div className="container">
+	<p className="item">
+	</p>
+</div>
+
+7. Create sibling elements,
+Ans: .flex-parent > .flex-child1 + .flex-child2
+
+Result:
+<div className ="flex-parent">
+	<div className="flex-child1"> </div>
+	<div className="flex-child2"></div>
+</div>
+
+8. create multiple items & multiple items with same class
+Ans 1:  .list*3
+Result:
+<div className="list"></div>
+<div className="list"></div>
+<div className="list"></div>
+
+Ans2: div*3
+Result:
+<div className="list"></div>
+<div className="list"></div>
+<div className="list"></div>
+
+9. Create multipl sibling with same className
+Ans: .product>.productitems*3
+Result:
+<div className="product">
+	<div className="productitems"> </div>
+	<div className="productitems"> </div>
+	<div className="productitems"> </div>
+</div>
+
+10. Create lorem ipsum & lorem ipsum with specific number of words,
+Ans1: lorem
+Result: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto omnis mollitia tenetur iure. Nulla eveniet quod officiis, illo eius consequuntur, sunt optio similique necessitatibus tempora reprehenderit. Rem, illum rerum. 
+
+Ans2: lorem10 - creates lorem fillers with 10 words
+Result: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, asperiores!
+
+11. Create many loremipsum
+Ans: (p>lorem10)*5
+
+Result:
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, eligendi.</p>
+<p>Assumenda ut dolor nobis deserunt eligendi consectetur illo ullam laudantium?</p>
+<p>Temporibus iusto perferendis cum quibusdam excepturi fuga expedita consequatur hic.</p>
+<p>Natus totam nulla deleniti odio corrupti accusantium voluptates, est voluptatem.</p>
+<p>Neque eligendi atque quaerat ullam id obcaecati ducimus nam nostrum?</p>
+
+12. Wrap or no wrap - VS Code ShortCut
+Ans: Alt+Z
+
+13. Create ul & li with innertext with numbers appended to it
+Ans: ul>li*4{list-item$}
+
+Result:
+<ul>
+  <li>list-item1</li>
+  <li>list-item2</li>
+  <li>list-item3</li>
+  <li>list-item4</li>
+</ul>
+
+
+
