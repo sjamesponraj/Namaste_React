@@ -1,16 +1,15 @@
 {
-  "name": "assignment2",
+  "name": "assignment_header",
   "version": "1.0.0",
-  "description": "Simple Hello World Using React and ReactDom libraries",
+  "description": "",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-plugin-remove-console": "^1.0.1",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -21,7 +20,6 @@
     "process": "^0.11.10"
   },
   "browserslist": [
-    "last 2 versions",
-    "last 2 ie version"
+    "last 2 versions"
   ]
 }
